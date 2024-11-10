@@ -140,3 +140,50 @@
     margin-top: 40px;
   }
   
+  /* Ensure the buttons are properly sized and visible */
+.cart-item-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  min-width: 40px; /* Ensure there's a minimum width */
+  text-align: center; /* Align text in the button */
+  display: inline-block; /* Allow the buttons to sit next to each other */
+}
+
+.cart-item-button:hover {
+  background-color: #218838;
+}
+
+/* Increment button (green +) */
+.cart-item-button-inc {
+  margin-left: 10px;
+  display: inline-block; /* Ensure it is in line with other elements */
+}
+
+/* Decrement button (red -) */
+.cart-item-button-dec {
+  margin-right: 10px;
+  display: inline-block; /* Ensure it is in line with other elements */
+}
+
+/* Ensure that quantity value is visible and properly styled */
+.cart-item-quantity-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  min-width: 30px; /* Give it a minimum width */
+  text-align: center; /* Center-align the number */
+  display: inline-block; /* Ensure it aligns well with buttons */
+}
+
+/* Container for quantity buttons (increment, value, decrement) */
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center buttons and value */
+  margin-top: 10px;
+}
